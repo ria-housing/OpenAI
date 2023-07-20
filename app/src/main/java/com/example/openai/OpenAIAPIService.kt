@@ -12,7 +12,7 @@ interface OpenAIAPIService {
     suspend fun getResponse(
         @Body requestBody: RequestBody,
         @Header("Content-Type") res : String = "application/json",
-        @Header("Authorization") key : String = "Bearer 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"
+        @Header("Authorization") key : String = "Bearer $YOUR_API"
     ): Answer
     companion object{
         var apiService: OpenAIAPIService? = null
